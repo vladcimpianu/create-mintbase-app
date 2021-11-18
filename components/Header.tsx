@@ -4,11 +4,11 @@ import { useWallet } from '../services/providers/MintbaseWalletContext'
 const Header = () => {
   const { wallet, isConnected, details } = useWallet()
   return (
-    <header className="w-full px-6 bg-white">
+    <header className="w-full px-6 bg-black text-white">
       <div className="container mx-auto max-w-8xl md:flex justify-between items-center">
         <Link href="/" passHref>
-          <a className="py-6 w-full text-center md:text-left md:w-auto text-gray-600 no-underline flex justify-center items-center">
-            Mintbase Engineering
+          <a className="py-6 w-full text-center md:text-left md:w-auto text-white-600 no-underline flex justify-center items-center">
+            Vlad's NFT Store
           </a>
         </Link>
 
@@ -20,7 +20,7 @@ const Header = () => {
               </p>
             )}
             <button
-              className="inline-block no-underline bg-black text-white text-sm py-2 px-3"
+              className="inline-block no-underline bg-white text-black text-sm py-2 px-3 rounded-md"
               onClick={
                 isConnected
                   ? () => {
