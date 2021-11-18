@@ -15,8 +15,6 @@
 # production
 /build
 
-
-
 # misc
 .DS_Store
 *.pem
@@ -27,7 +25,6 @@ yarn-debug.log*
 yarn-error.log*
 
 # local env files
-*.env
 .env.local
 .env.development.local
 .env.test.local
@@ -35,3 +32,7 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# Config
+/.env.*
+.env
